@@ -1,0 +1,75 @@
+:root {
+  --primary-color: #333333;
+  --second-color: #ffffff;
+  --accent-color: #ff922c;
+  --second-accent-color: #54bf29;
+  --bg-color: #ffeede;
+  --second-bg-color: #eaffe2;
+}
+
+body {
+  color: var(--primary-color);
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.54;
+}
+
+ul {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link:visited {
+  color: inherit;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+}
+
+.btn {
+  color: var(--second-color);
+  font-weight: 700;
+
+  background-color: var(--accent-color);
+}
+
+.btn:hover,
+.btn:focus {
+  color: var(--accent-color);
+
+  background-color: var(--second-color);
+}
+
+.logo {
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.section {
+}
+
+.section-title {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.39;
+}
+
+.section-label {
+  color: var(--accent-color);
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 1.5;
+}
