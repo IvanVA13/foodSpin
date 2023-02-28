@@ -12,6 +12,10 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
@@ -29,7 +33,11 @@
             <li class="item"><a class="link nav-link" href="/">Dinner</a></li>
           </ul>
         </nav>
-        <button class="btn btn-basket"><img src="/" alt="basket" /></button>
+        <button class="btn basket-btn">
+          <svg class="basket-btn-icon">
+            <use href="./images/icons.svg#icon-basket"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -47,12 +55,16 @@
           <ul class="slider-btn-list">
             <li class="item">
               <button class="btn secondary-btn" type="button">
-                <img src="/" alt="spin left" />
+                <svg class="btn-icon">
+                  <use href="./images/icons.svg#icon-arrow"></use>
+                </svg>
               </button>
             </li>
             <li class="item">
               <button class="btn secondary-btn" type="button">
-                <img src="/" alt="spin right" />
+                <svg class="btn-icon">
+                  <use href="./images/icons.svg#icon-arrow"></use>
+                </svg>
               </button>
             </li>
           </ul>
