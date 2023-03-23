@@ -1,0 +1,13 @@
+.link {
+  color: inherit;
+  text-decoration: none;
+  transition: color $transition-animation;
+  &:visited {
+    color: inherit;
+  }
+
+  &:hover,
+  &:focus {
+    color: get-color("accent");
+  }
+}

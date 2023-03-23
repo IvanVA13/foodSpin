@@ -1,0 +1,23 @@
+.section {
+  padding-top: 123px;
+  padding-bottom: 140px;
+}
+
+.section-label {
+  color: get-color("accent");
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 1.5;
+}
+
+.section-title {
+  margin-bottom: 15px;
+
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.39;
+}
+
+.section-description {
+  margin-bottom: 30px;
+}

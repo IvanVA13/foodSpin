@@ -1,0 +1,43 @@
+.primary-btn {
+  @extend %btn;
+  padding: 14px 41px;
+}
+
+.secondary-btn {
+  @extend %btn;
+  width: 40px;
+  height: 40px;
+  padding: 13px;
+
+  color: get-color("second");
+  border-radius: 50%;
+  box-shadow: 0px 10px 20px #f5ece3;
+}
+
+.btn-icon {
+  width: 14px;
+  height: 14px;
+
+  stroke: currentColor;
+}
+
+.basket-btn {
+  @extend %btn;
+  margin-left: auto;
+
+  color: inherit;
+  background-color: transparent;
+  box-shadow: none;
+
+  &:focus,
+  &:hover {
+    background-color: transparent;
+  }
+}
+
+.basket-btn-icon {
+  width: 20px;
+  height: 22px;
+
+  fill: currentColor;
+}
