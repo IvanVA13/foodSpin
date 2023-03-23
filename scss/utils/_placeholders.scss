@@ -1,0 +1,17 @@
+%btn {
+  color: get-color("second");
+  font-weight: 700;
+
+  background-color: get-color("accent");
+  border: transparent;
+  border-radius: 70px;
+  box-shadow: 0px 20px 40px #f4e2d1;
+  transition: color $transition-animation,
+    background-color $transition-animation;
+  &:hover,
+  &:focus {
+    color: get-color("accent");
+
+    background-color: get-color("second");
+  }
+}

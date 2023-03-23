@@ -1,0 +1,89 @@
+.small-food-list {
+  position: relative;
+  top: 865px;
+  right: -265px;
+
+  width: 650px;
+  height: 650px;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  overflow: hidden;
+  transition: transform $transition-animation;
+
+  &::after {
+    position: absolute;
+    top: 45px;
+    left: 45px;
+    content: "";
+    display: block;
+    width: 560px;
+    height: 560px;
+
+    background-image: url(../images/small-food-circle.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+  }
+}
+
+.small-food-list > .item {
+  position: absolute;
+
+  &:nth-child(1),
+  &:nth-child(10) {
+    top: 30%;
+    left: 0;
+  }
+
+  &:nth-child(2),
+  &:nth-child(9) {
+    top: 0;
+    left: 15%;
+    transform: translateY(50%);
+  }
+
+  &:nth-child(3),
+  &:nth-child(8) {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &:nth-child(4),
+  &:nth-child(7) {
+    top: 0;
+    right: 15%;
+    transform: translateY(50%);
+  }
+
+  &:nth-child(5),
+  &:nth-child(6) {
+    top: 30%;
+    right: 0;
+  }
+
+  &:nth-child(6),
+  &:nth-child(10) {
+    top: unset;
+    bottom: 30%;
+  }
+
+  &:nth-child(7),
+  &:nth-child(8),
+  &:nth-child(9) {
+    top: unset;
+    bottom: 0;
+  }
+
+  &:nth-child(7),
+  &:nth-child(9) {
+    transform: translateY(-50%);
+  }
+}
+
+.small-food-list img {
+  display: block;
+  width: 99px;
+  border: transparent;
+  border-radius: 50%;
+}

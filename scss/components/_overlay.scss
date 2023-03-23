@@ -1,0 +1,28 @@
+.overlay-small {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1177px;
+  height: 1177px;
+
+  background-color: get-color("bg");
+
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.overlay-big {
+  position: absolute;
+  right: 440px;
+  bottom: -100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 18px;
+  width: 295px;
+  height: 295px;
+
+  border-radius: 50%;
+  overflow: hidden;
+}
